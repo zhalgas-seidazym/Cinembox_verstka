@@ -1,0 +1,55 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+}
+
+.block_2{
+    position: relative;
+}
+
+.block_2_img{
+    position: relative;
+    top: 100px;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    margin-bottom: 350px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.block2_textbox{
+    position: absolute;
+    left: 33%;
+    top: 23%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block2_text{
+    text-align: center;
+    font-size: 140px;
+    font-weight: 500;
+    line-height: 165px;
+}
+
+.block_2_button{
+    background-color: transparent;
+    width: 220px;
+    outline: 0px;
+    color: white;
+    height: 60px;
+    border: 2px solid white;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.block_2_button:hover{
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    background-color: white;
+}

@@ -1,0 +1,52 @@
+.block_8{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 9%;
+}
+
+.block_8 .item1 .topic{
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.block_8 .item1 .text{
+    font-size: 53px;
+    font-weight: 500;
+    margin-bottom: 85px;
+}
+
+.block_8 .item2{
+    display: flex;
+    justify-content: center;
+}
+
+.block_8 .item2_item{
+    width: 14%;
+    margin: 0 40px;
+}
+
+.block_8 .image_case{
+    width: 100%;
+}
+
+.block_8 .image{
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.block_8 .image:hover{
+    transform: scaleX(-1);
+}
+
+.block_8 .item2_item .name{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 30px 0 20px;
+}
+
+.block_8 .item2_item .job{
+    text-transform: none;
+    font-size: 20px;
+    color: #cccccc;
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinembox</title>
+    <script src="https://kit.fontawesome.com/eb2d789eb6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/all.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var links = document.querySelectorAll('.links');
+
+            links.forEach(function(link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    var targetId = this.getAttribute("href").substring(1); // Get the target ID
+                    var targetElement = document.getElementById(targetId);
+                    var yOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+                    var offset = 100; // Adjust this value as needed
+
+                    window.scroll({
+                        top: yOffset - offset,
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="" class="logo_parent">
+            <img class="logo" src="img/Logo.png" alt="">
+        </a>
+        <div class="link_container">
+            <a href="#block2" class="links link1">Home</a>
+            <a href="#block3" class="links link2">About</a>
+            <a href="#block4" class="links link3">Service</a>
+            <a href="#block5" class="links link4">What We Do</a>
+            <a href="#block6" class="links link5">Our Gallery</a>
+            <a href="#block7" class="links link6">Review</a>
+            <a href="#block8" class="links link7">Team</a>
+            <a href="#block9" class="links link8">Blog</a>
+        </div>
+        <a class="search_icon_parent" href="">
+            <i class="fa-solid fa-magnifying-glass search_icon"></i>
+        </a>
+    </header>
+
+    <section class="body">
+        <div class="block_2" id="block2">
+            <img src="img/block2 block6 1.jpg" alt="" class="block_2_img">
+            <div class="block2_textbox">
+                <h1 class="block2_text">#NO 1<br>CINEMBOX<br>STUDIO</h1>
+                <button class="block_2_button">READ MORE</button>
+            </div>
+        </div>
+
+        <div class="block_3" id="block3">
+            <div class="block3_grid">
+                <div class="block3_item item1">
+                    <img src="img/block3 1 block9 3.jpg" alt="" class="item1_img image">
+                </div>
+                <div class="block3_item item2 text">
+                    <h1 class="item_topic">
+                        BEST FILM STUDIOS
+                    </h1>
+                    <p class="item_text">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                    </p>
+                    <button class="item_button">READ MORE</button>
+                </div>
+                <div class="block3_item item3 text">
+                    <h1 class="item_topic">
+                        FILM AWARDS 2023
+                    </h1>
+                    <p class="item_text">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                    </p>
+                    <button class="item_button">READ MORE</button>
+                </div>
+                <div class="block3_item item4">
+                    <img src="img/block3 2.jpg" alt="" class="item4_img image">
+                </div>
+            </div>
+        </div>
+
+        <div class="block_4" id="block4">
+            <div class="block4_item item1">
+                best services
+            </div>
+            <div class="block4_item item2">
+                our production
+            </div>
+            <div class="block4_item item3">
+                <div class="item3_item">
+                    <img src="img/shows.png" alt="" class="image_icon">
+                    <h2 class="topic">tv shows</h2>
+                    <span class="text">It is a long established fact<br>that a reader will be</span>
+                </div>
+                <div class="item3_item">
+                    <img src="img/awards.png" alt="" class="image_icon">
+                    <h2 class="topic">film awards</h2>
+                    <span class="text">It is a long established fact<br>that a reader will be</span>
+                </div>
+                <div class="item3_item">
+                    <img src="img/directors.png" alt="" class="image_icon">
+                    <h2 class="topic">directors</h2>
+                    <span class="text">It is a long established fact<br>that a reader will be</span>
+                </div>
+                <div class="item3_item">
+                    <img src="img/festivals.png" alt="" class="image_icon">
+                    <h2 class="topic">festivals</h2>
+                    <span class="text">It is a long established fact<br>that a reader will be</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="block_5" id="block5">
+            <div class="block5_item item1">
+                <h3 class="topic">now in cinema</h3>
+                <p class="topic_text">what we do</p>
+            </div>
+            <div class="block5_item item2 samebox">
+                <div class="item2_item">
+                    <div class="image_case">
+                        <img src="/img/block5 1 block9 1.jpg" alt="" class="image">
+                    </div>
+                    <h2 class="topic">tv shows</h2>
+                    <p class="text">comedy</p>
+                </div>
+                <div class="item2_item">
+                    <div class="image_case">
+                        <img src="/img/block5 2.jpg" alt="" class="image">
+                    </div>
+                    <h2 class="topic">movie</h2>
+                    <p class="text">action</p>
+                </div>
+                <div class="item2_item">
+                    <div class="image_case">
+                        <img src="/img/block5 3.jpg" alt="" class="image">
+                    </div>
+                    <h2 class="topic">girls</h2>
+                    <p class="text">comedy</p>
+                </div>
+            </div>
+            <div class="block5_item item3 samebox">
+                <div class="item2_item">
+                    <div class="image_case">
+                        <img src="/img/block5 4.jpg" alt="" class="image">
+                    </div>
+                    <h2 class="topic">happiness</h2>
+                    <p class="text">retro</p>
+                </div>
+                <div class="item2_item">
+                    <div class="image_case">
+                        <img src="/img/block5 5 block9 2.jpg" alt="" class="image">
+                    </div>
+                    <h2 class="topic">retro</h2>
+                    <p class="text">romance</p>
+                </div>
+                <div class="item2_item">
+                    <div class="image_case">
+                        <img src="/img/block5 6.jpg" alt="" class="image">
+                    </div>
+                    <h2 class="topic">action</h2>
+                    <p class="text">comedy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block_6" id="block6">
+            <div class="block6_item item1">
+                <h2 class="topic">now in cinema</h2>
+                <p class="text">our work gallery</p>
+            </div>
+            <div class="block6_item item2">
+                <div class="image_case"><img src="/img/block2 block6 1.jpg" alt="" class="image image1"></div>
+                <div class="image_case"><img src="/img/block6 2.jpg" alt="" class="image"></div>
+                <div class="image_case"><img src="/img/block6 3.jpg" alt="" class="image"></div>
+                <div class="image_case"><img src="/img/block6 4.jpg" alt="" class="image"></div>
+                <div class="image_case"><img src="/img/block6 5.jpg" alt="" class="image"></div>
+            </div>
+            <div class="block6_item item3">
+                <p class="text">"Contrary to popular belief, Lorem Ipsum is not simply random text. it has roots <br>classical latin literature from making over 2000 years old."</p>
+                <img src="/img/block6 6.svg" alt="" class="image">
+                <h3 class="autor">- vhon worn</h3>
+            </div>
+        </div>
+
+        <div class="block_7" id="block7">
+            <div class="image_case">
+                <img src="/img/block7 1.jpg" alt="" class="image">
+            </div>
+            <div class="text_case">
+                <h2 class="topic">WELCOME TO CINEMBOX MOVIE PRODUCTION STUDIO</h2>
+                <p class="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots classical Latin literature from making over 2000 years old.from 45 BC, making it over 2000 years old. Richard McClintock,</p>
+                <img src="/img/block7 2.png" alt="" class="image">
+                <img src="/img/block7 3.png" alt="" class="image">
+                <img src="/img/block7 4.png" alt="" class="image"></div>
+        </div>
+
+        <div class="block_8" id="block8">
+            <div class="item1">
+                <h3 class="topic">our teams</h3>
+                <p class="text">cast & crew</p>
+            </div>
+            <div class="item2">
+                <div class="item2_item">
+                    <div class="image_case"><img src="/img/block8 1.png" alt="" class="image"></div>
+                    <h3 class="name">emilia chaplin</h3>
+                    <span class="job">Producer</span>
+                </div>
+                <div class="item2_item">
+                    <div class="image_case"><img src="/img/block8 2.png" alt="" class="image"></div>
+                    <h3 class="name">zecin marc</h3>
+                    <span class="job">Director</span>
+                </div>
+                <div class="item2_item">
+                    <div class="image_case"><img src="/img/block8 3.png" alt="" class="image"></div>
+                    <h3 class="name">shinpu zwon</h3>
+                    <span class="job">Film Maker</span>
+                </div>
+                <div class="item2_item">
+                    <div class="image_case"><img src="/img/block8 4.png" alt="" class="image"></div>
+                    <h3 class="name">astri zaq</h3>
+                    <span class="job">Assistant</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="block_9" id="block9">
+            <div class="block9_item item1">
+                <h2 class="topic">latest news</h2>
+                <p class="text">from our blog</p>
+            </div>
+            <div class="block9_item item2">
+                <div class="item2_item">
+                    <div class="image_case"><img src="/img/block5 1 block9 1.jpg" alt="" class="image"></div>
+                    <span class="date">April 20, 2023</span>
+                    <h3 class="topic">new hamphshire movie <br>festival 2023</h3>
+                    <p class="text">Contary to popular belief, Lorem Ipsum is not simply random text. it has roots.</p>
+                </div>
+                <div class="item2_item">
+                    <div class="image_case"><img src="/img/block5 5 block9 2.jpg" alt="" class="image"></div>
+                    <span class="date">April 20, 2023</span>
+                    <h3 class="topic">the printing and <br>typesetting industry</h3>
+                    <p class="text">Contary to popular belief, Lorem Ipsum is not simply random text. it has roots.</p>
+                </div>
+                <div class="item2_item">
+                    <div class="image_case"><img src="/img/block3 1 block9 3.jpg" alt="" class="image"></div>
+                    <span class="date">April 20, 2023</span>
+                    <h3 class="topic">there are many variations of <br>passages available</h3>
+                    <p class="text">Contary to popular belief, Lorem Ipsum is not simply <br> random text. it has roots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="connector">
+        <div class="block_10">
+            <p class="text">Presents a Production In Association With</p>
+            <div class="case">
+                <div class="image_case"><img src="/img/block10 1.png" alt="" class="image"></div>
+                <div class="image_case"><img src="/img/block10 2.png" alt="" class="image"></div>
+                <div class="image_case"><img src="/img/block10 3.png" alt="" class="image"></div>
+                <div class="image_case"><img src="/img/block10 4.png" alt="" class="image"></div>
+                <div class="image_case"><img src="/img/block10 5.png" alt="" class="image"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="block_11">
+            <h2 class="topic">NEWS & FILM UPDATES</h2>
+            <p class="text">Sign up to get the latest on new Products, Promotions, Design news and more</p>
+            <div class="case">
+                <input type="text" class="input">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+
+        <div class="block_12">
+            <div class="block12_item item1">
+                <h2 class="topic">ABOUT</h2>
+                <p class="text">Contrary to popular belief, Lorem <br>
+                    Ipsum is not simply random</p>
+            </div>
+            <div class="block12_item item2">
+                <h2 class="topic">PRODUCTION</h2>
+                <p class="text">About Edge</p>
+                <p class="text">Latest Videos</p>
+                <p class="text">Studio Tour</p>
+                <p class="text">Latest News</p>
+            </div>
+            <div class="block12_item item3">
+                <h2 class="topic">HELP</h2>
+                <p class="text">About Edge</p>
+                <p class="text">Latest Videos</p>
+                <p class="text">Studio Tour</p>
+            </div>
+            <div class="block12_item item4">
+                <h2 class="topic">INSTAGRAM</h2>
+                <div class="image_case">
+                    <img src="/img/block12 1.jpg" alt="" class="image">
+                    <img src="/img/block12 2.jpg" alt="" class="image">
+                    <img src="/img/block12 3.jpg" alt="" class="image">
+                </div>
+                <div class="image_case">
+                    <img src="/img/block12 4.jpg" alt="" class="image">
+                    <img src="/img/block12 5.jpg" alt="" class="image">
+                    <img src="/img/block12 6.jpg" alt="" class="image">
+                </div>
+            </div>
+        </div>
+        
+        <p class="end">© 2023 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

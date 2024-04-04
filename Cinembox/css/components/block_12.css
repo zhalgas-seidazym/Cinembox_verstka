@@ -1,0 +1,52 @@
+.block_12{
+    width: 80%;
+    display: flex;
+    border-bottom: 1px solid #212121;
+    padding-bottom: 4%;
+}
+
+.block12_item{
+    width: 25%;
+}
+
+.block_12 .topic{
+    padding: 70px 0 50px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.block_12 .image_case{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px 0;
+    box-sizing: border-box;
+}
+
+.block_12 .image{
+    width: 30%;
+}
+
+.block_12 .item1 .text{
+    font-size: 22px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.block_12 .item2 .text{
+    font-size: 22px;
+    line-height: 1.8;
+    cursor: pointer;
+}
+
+.block_12 .item3 .text{
+    font-size: 22px;
+    line-height: 1.8;
+    cursor: pointer;
+}
+
+.end{
+    font-size: 22px;
+    padding: 35px 0;
+    color: #cccccc;
+}

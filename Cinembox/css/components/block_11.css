@@ -1,0 +1,59 @@
+.footer{
+    background-color: #111111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block_11{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6%;
+    width: 80%;
+    border-bottom: 1px solid #212121;;
+}
+
+.block_11 .topic{
+    font-size: 30px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.block_11 .text{
+    color: #cccccc;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.block_11 .case{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.block_11 .input{
+    display: block;
+    background-color: #111111;
+    border-color: white;
+    outline: none;
+    width: 32%;
+    margin-right: 5px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+.block_11 button{
+    display: block;
+    width: 13%;
+    background-color: white;
+    color: black;
+    height: 65px;
+    font-size: 18px;
+}
+
+.block_11 button:hover{
+    cursor: pointer;
+}

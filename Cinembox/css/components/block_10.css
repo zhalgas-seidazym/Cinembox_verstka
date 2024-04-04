@@ -1,0 +1,34 @@
+body{
+    background-image: url("/img/body_back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.block_10{
+    padding: 9% 0 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block_10 .text{
+    color: #cccccc;
+    font-size: 21px;
+    margin-bottom: 80px;
+}
+
+.block_10 .case{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.image_case{
+    width: 12%;
+}
+
+.block_10 .image{
+    width: 50%;
+    margin-right: 50%;
+}
